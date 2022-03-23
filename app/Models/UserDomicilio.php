@@ -11,4 +11,12 @@ class UserDomicilio extends Model
     protected $primaryKey = 'id_user_domicilio';
     protected $table = 'user_domicilio';
     public $timestamps = false;
+    protected $fillable = [
+        'user_id',
+        'domicilio',
+        'numero_exterior',
+        'colonia',
+        'cp',
+        'ciudad',
+    ];
 }
